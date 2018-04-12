@@ -67,7 +67,7 @@
   width: 100%;
   height:200px;
 }
-@media (max-width: 674px) {
+@media (min-width: 456px) and (max-width: 654px) {
   .nyhetsboxar{
     width: 45%;
 
