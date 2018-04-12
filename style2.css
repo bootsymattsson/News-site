@@ -1,0 +1,83 @@
+
+.container{
+  background-color: red;
+}
+.topbar{
+  background-color: yellow;
+  display: flex;
+}
+.logotyp{
+  width: 10%;
+    display: flex;
+
+
+}
+.menycontainer{
+  background-color: blue;
+  width: 90%;
+}
+.meny {
+  background-color: green;
+  display: flex;
+  justify-content: flex-end;
+  width:100%;
+}
+.menyitem {
+  background-color: green;
+  padding: 8px 10px 11px 12px;
+  font-weight: bold;
+  color: white;
+}
+.undermeny {
+  background-color: purple;
+  width:100%;
+  height: 50px;
+
+}
+
+.logotyp img{
+  width: 100%;
+  height:auto;
+}
+
+.nyhetsarea
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.nyhetsboxar
+{
+  background-color: red;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border: solid black;
+  border-width: thin;
+  border-color: #EEE2DD;
+  margin-bottom: 10px;
+  width: 30%;
+}
+
+.sidfot {
+  background-color: black;
+  width: 100%;
+  height:200px;
+}
+@media (max-width: 674px) {
+  .nyhetsboxar{
+    width: 45%;
+
+  }
+
+}
+
+@media (max-width: 455px)
+{
+  .nyhetsboxar{
+    width: 90%;
+  }
+}
