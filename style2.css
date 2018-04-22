@@ -1,56 +1,128 @@
+body
+  {
+    background-color: #F7EAE4;
+  }
 
-.container{
-  background-color: red;
-}
-.topbar{
-  background-color: yellow;
-  display: flex;
-}
-.logotyp{
-  width: 10%;
+img
+  {
+    width: 100%;
+  }
+
+H1
+  {
+    color: #2C2C2C;
+    font-size: 30px;
+    margin-top:0;
+    margin-bottom: 0;
+  }
+
+H2
+  {
+    color: #2C2C2C;
+    font-size: 18px;
+    margin-top:0;
+    margin-bottom: 0;
+  }
+
+H3
+  {
+    color: #2D6B9F;
+    font-size: 15px;
+  }
+
+H4
+  {
+    color: #A82521;
+    font-size: 11px;
+    margin-bottom: 3px;
+  }
+
+H5
+  {
+    color: White;
+    font-size: 20px;
+    margin: 0px;
+    padding-top: 4px;
+    padding-left: 125px;
+    font-family: sans-serif;
+    font-weight: 200;
+  }
+
+
+.container
+  {
+    background-color: red;
+  }
+
+.topbar
+  {
+    background-color: yellow;
     display: flex;
+    margin-bottom: 30px;
+  }
 
+.logotyp
+    {
+        width: 68px;
+        height: 68px;
+        position: absolute;
+        left: 10px;
+        top: 3px;
+        background-color: #a7100c;
+        border: 2px solid #eee2dd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-}
-.menycontainer{
-  background-color: blue;
-  width: 90%;
-}
+.menycontainer
+  {
+    background-color: blue;
+    width: 100%;
+  }
+
 .meny {
-  background-color: green;
+  background-color: black;
   display: flex;
   justify-content: flex-end;
-  width:100%;
-}
-.menyitem {
-  background-color: green;
-  padding: 8px 10px 11px 12px;
-  font-weight: bold;
-  color: white;
-}
-.undermeny {
-  background-color: purple;
-  width:100%;
-  height: 50px;
+  width:100%;}
 
-}
+marquee {
+  position: sticky;
+  bottom: 0px;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: yellow;
+  font-size: 18px;
+  font-family: helvetica;}
+
+.menyitem {
+  background-color: black;
+  padding: 8px 10px 11px 12px;
+  font-weight:200;
+  color: white;
+  font-family: bentonsansdi;}
+
+.undermeny {
+  background-color: #E7D5CE;
+  width:100%;
+  height: 30px;
+  justify-content: flex-end;}
 
 .logotyp img{
   width: 100%;
   height:auto;
 }
 
-.nyhetsarea
-{
+.nyhetsarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 10px;
-}
+  margin-top: 10px;}
 
-.nyhetsboxar
-{
-  background-color: red;
+.nyhetsboxar {
+  background-color: #F8EDEC;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
@@ -59,25 +131,39 @@
   border-width: thin;
   border-color: #EEE2DD;
   margin-bottom: 10px;
-  width: 30%;
-}
+  width: 30%;}
+
+.button {
+    background-color: #A82521; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 2px;
+    margin-top: 30px;
+    margin-left: 25%;}
 
 .sidfot {
-  background-color: black;
+  background-color: #E7D5CE;
   width: 100%;
   height:200px;
-}
-@media (min-width: 456px) and (max-width: 654px) {
+  font: inherit;
+  vertical-align: baseline;
+  justify-content: center;
+  padding-top: 50px;
+  text-align: center;}
+
+@media (min-width: 456px) and (max-width: 654px)
+  {
   .nyhetsboxar{
-    width: 45%;
-
+    width: 45%;}
   }
-
-}
 
 @media (max-width: 455px)
 {
   .nyhetsboxar{
-    width: 90%;
-  }
+    width: 90%;}
 }
