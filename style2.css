@@ -1,6 +1,7 @@
 body
   {
     background-color: #F7EAE4;
+    background-image: url("varldskarta.jpg");
   }
 
 img
@@ -56,7 +57,7 @@ H5
 
 .topbar
   {
-    background-color: yellow;
+
     display: flex;
     margin-bottom: 30px;
   }
@@ -77,19 +78,21 @@ H5
 
 .menycontainer
   {
-    background-color: blue;
+
     width: 100%;
   }
 
 .meny {
   background-color: black;
   display: flex;
+
   justify-content: flex-end;
   width:100%;}
 
 marquee {
   position: sticky;
   bottom: 0px;
+  opacity: 0.9;
   background-color: black;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -101,12 +104,14 @@ marquee {
   background-color: black;
   padding: 8px 10px 11px 12px;
   font-weight:200;
+
   color: white;
   font-family: bentonsansdi;}
 
 .undermeny {
-  background-color: #E7D5CE;
+  background-color: #fba010;
   width:100%;
+
   height: 30px;
   justify-content: flex-end;}
 
@@ -119,12 +124,17 @@ marquee {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 10px;}
+  margin-top: 10px;
+  margin-left: 42px;
+  margin-right: 42px;
+    background-color: #EEE2DD;
+}
 
 .nyhetsboxar {
   background-color: #F8EDEC;
-  padding-left: 10px;
-  padding-right: 10px;
+  opacity: 0.8;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 15px;
   border: solid black;
@@ -136,6 +146,7 @@ marquee {
 .button {
     background-color: #A82521; /* Green */
     border: none;
+    align-self: baseline;
     color: white;
     padding: 10px 50px;
     text-align: center;
@@ -148,22 +159,81 @@ marquee {
 
 .sidfot {
   background-color: #E7D5CE;
+  opacity: 0.3  ;
   width: 100%;
   height:200px;
   font: inherit;
   vertical-align: baseline;
   justify-content: center;
   padding-top: 50px;
-  text-align: center;}
+  text-align: center;
+  margin-top:25px;
+  align-self:stretch;
+
+}
+.toppnyheter {
+	display: flex;
+	flex-wrap: wrap;
+  padding-left: 10px;
+
+}
+
+
+
+
+.wsj, .bloomberg, .ft, .businessinsider, .economist, .wired
+{
+	display: inline-block;
+	flex-wrap: wrap;
+  width: 30%;
+  padding-left: 10px;
+
+
+}
+.wsj_artiklar, .bloomberg_artiklar, .ft_artiklar, .businessinsider_artiklar, .economist_artiklar, .wired_artiklar
+{
+  background-color: #F8EDEC;
+  opacity: 0.8;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border: solid black;
+  border-width: thin;
+  border-color: black;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+}
+
+.news {
+  background-color: #F8EDEC;
+  opacity: 0.8;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border: solid black;
+  border-width: thin;
+  border-color: #EEE2DD;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 30%;
+}
 
 @media (min-width: 456px) and (max-width: 654px)
   {
   .nyhetsboxar{
     width: 45%;}
+    .news{
+      width: 45%;}
   }
+
 
 @media (max-width: 455px)
 {
   .nyhetsboxar{
     width: 90%;}
+    .news{
+      width: 90%;}
 }
