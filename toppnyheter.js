@@ -12,22 +12,39 @@ const toppnyheter = (newsdata) => {
       const div = document.createElement("div")
       div.className = "news"
 //byter ut info i diven
-      div.innerHTML = `<h4>${article.author}</h4>
+/*      div.innerHTML = `<h4>${article.author}</h4>
                       <h2>${article.title}</h2>
                       <p>${article.description}</p>`
+                      */
 
       articlesDiv.appendChild(div)
 
+
+      const h4 = document.createElement("h4")
+			h4.innerHTML = article.author
+      div.appendChild(h4)
+
+      const h2 = document.createElement("h2")
+			h2.innerHTML = article.title
+      div.appendChild(h2)
+
       if(index<3){
-			     //This fetches and add images to our articles index 0 så det bara blir första gången
-			        const img = document.createElement("img")
-            img.src = article.urlToImage
-            div.appendChild(img)
+	     //This fetches and add images to our articles index 0 så det bara blir första gången
+	      const img = document.createElement("img")
+        img.src = article.urlToImage
+        div.appendChild(img)
       }
+
+      const p = document.createElement("p")
+			p.innerHTML = article.description
+      div.appendChild(p)
+
 			const link = document.createElement("a")
 			link.href = article.url
+      link.className = "button"
 			link.innerHTML = "Läs mer"
 			div.appendChild(link) //Lägger till information utan att skriva över
+
     })
 }
 
