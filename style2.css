@@ -165,7 +165,8 @@ marquee {
     font-size: 16px;
     border-radius: 2px;
     margin-top: 30px;
-    margin-left: 25%;}
+    margin-left: 25%;
+    font-family: avenir;}
 
 .sidfot {
   background-color: #E7D5CE;
@@ -188,28 +189,31 @@ marquee {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.toppnyheter {
+/*.toppnyheter {
 	display: flex;
 	flex-wrap: wrap;
   padding-left: 10px;
 
-}
+}*/
 
 
 
 
 
 
-.wsj, .bloomberg, .ft, .businessinsider, .economist, .wired
+.toppnyheter, .wsj, .bloomberg, .ft, .businessinsider, .economist, .wired
 {
-	display: flex;
+	/*display: flex;
 	flex-wrap: wrap;
  width: 30%;
+  padding-left: 10px;*/
+  display: flex;
+	flex-wrap: wrap;
   padding-left: 10px;
 
 
 }
-.wsj_artiklar, .bloomberg_artiklar, .ft_artiklar, .businessinsider_artiklar, .economist_artiklar, .wired_artiklar
+.news,.wsj_artiklar, .bloomberg_artiklar, .ft_artiklar, .businessinsider_artiklar, .economist_artiklar, .wired_artiklar
 {
   background-color: #F8EDEC;
   opacity: 0.8;
@@ -222,10 +226,11 @@ marquee {
   border-color: black;
   margin-bottom: 10px;
   margin-right: 10px;
+  width: 30%;
 
 }
 
-.news {
+/*.news {
   background-color: #F8EDEC;
   opacity: 0.8;
   padding-left: 15px;
@@ -238,15 +243,15 @@ marquee {
   margin-bottom: 10px;
   margin-right: 10px;
   width: 30%;
-}
+}*/
 
 
 @media (min-width: 456px) and (max-width: 654px)
   {
   .nyhetsboxar, .wsj, .bloomberg, .ft, .businessinsider, .economist, .wired{
-    width: 45%;}
+    width: 50%;}
     .news, .wsj_artiklar, .bloomberg_artiklar, .ft_artiklar, .businessinsider_artiklar, .economist_artiklar, .wired_artiklar{
-      width: 45%;}
+      width: 50%;}
   }
 
 

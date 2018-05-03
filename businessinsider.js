@@ -27,6 +27,7 @@ const businessinsider = (newsdata) => {
       }
 			const link = document.createElement("a")
 			link.href = article.url
+        link.className = "button"
 			link.innerHTML = "Läs mer"
 			div.appendChild(link) //Lägger till information utan att skriva över
     })
