@@ -243,17 +243,17 @@ marquee {
 
 @media (min-width: 456px) and (max-width: 654px)
   {
-  .nyhetsboxar{
+  .nyhetsboxar, .wsj, .bloomberg, .ft, .businessinsider, .economist, .wired{
     width: 45%;}
-    .news{
+    .news, .wsj_artiklar, .bloomberg_artiklar, .ft_artiklar, .businessinsider_artiklar, .economist_artiklar, .wired_artiklar{
       width: 45%;}
   }
 
 
 @media (max-width: 455px)
 {
-  .nyhetsboxar{
+  .nyhetsboxar, .wsj, .bloomberg, .ft, .businessinsider, .economist, .wired{
     width: 90%;}
-    .news{
+    .news, .wsj_artiklar, .bloomberg_artiklar, .ft_artiklar, .businessinsider_artiklar, .economist_artiklar, .wired_artiklar{
       width: 90%;}
 }
