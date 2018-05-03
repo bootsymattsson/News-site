@@ -258,7 +258,7 @@ marquee {
 @media (max-width: 455px)
 {
   .nyhetsboxar, .wsj, .bloomberg, .ft, .businessinsider, .economist, .wired{
-    width: 90%;}
+    width: 100%;}
     .news, .wsj_artiklar, .bloomberg_artiklar, .ft_artiklar, .businessinsider_artiklar, .economist_artiklar, .wired_artiklar{
-      width: 90%;}
+      width: 100%;}
 }
